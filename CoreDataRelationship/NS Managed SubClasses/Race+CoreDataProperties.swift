@@ -19,7 +19,7 @@ extension Race {
 
     @NSManaged public var location: String?
     @NSManaged public var raceName: String?
-    @NSManaged public var stages: Stage?
+    @NSManaged public var stages: NSSet?
     
     // Wrap the optionals with defaults so they are never nil
     public var wrappedName: String {
