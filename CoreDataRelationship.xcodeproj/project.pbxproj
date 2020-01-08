@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A3B173E423C6417700A4C86F /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B173E323C6417700A4C86F /* PickerView.swift */; };
+		A3B173E623C641EE00A4C86F /* StageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B173E523C641EE00A4C86F /* StageModel.swift */; };
 		A3F0FDE623C6348900EF81B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDE523C6348900EF81B0 /* AppDelegate.swift */; };
 		A3F0FDE823C6348900EF81B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDE723C6348900EF81B0 /* SceneDelegate.swift */; };
 		A3F0FDEB23C6348900EF81B0 /* CoreDataRelationship.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDE923C6348900EF81B0 /* CoreDataRelationship.xcdatamodeld */; };
@@ -19,11 +20,11 @@
 		A3F0FE0123C6354300EF81B0 /* Race+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFD23C6354300EF81B0 /* Race+CoreDataProperties.swift */; };
 		A3F0FE0223C6354300EF81B0 /* Stage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFE23C6354300EF81B0 /* Stage+CoreDataClass.swift */; };
 		A3F0FE0323C6354300EF81B0 /* Stage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFF23C6354300EF81B0 /* Stage+CoreDataProperties.swift */; };
-		A3F0FE0A23C637AC00EF81B0 /* StageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FE0923C637AB00EF81B0 /* StageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A3B173E323C6417700A4C86F /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		A3B173E523C641EE00A4C86F /* StageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageModel.swift; sourceTree = "<group>"; };
 		A3F0FDE223C6348900EF81B0 /* CoreDataRelationship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataRelationship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F0FDE523C6348900EF81B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F0FDE723C6348900EF81B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		A3F0FDFD23C6354300EF81B0 /* Race+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Race+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A3F0FDFE23C6354300EF81B0 /* Stage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stage+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A3F0FDFF23C6354300EF81B0 /* Stage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stage+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		A3F0FE0923C637AB00EF81B0 /* StageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StageModel.swift; path = "../../CoreDataRelationship 2/StageModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 		A3F0FDE423C6348900EF81B0 /* CoreDataRelationship */ = {
 			isa = PBXGroup;
 			children = (
-				A3F0FE0923C637AB00EF81B0 /* StageModel.swift */,
+				A3B173E523C641EE00A4C86F /* StageModel.swift */,
 				A3F0FE0423C6354900EF81B0 /* NS Managed SubClasses */,
 				A3F0FDE523C6348900EF81B0 /* AppDelegate.swift */,
 				A3F0FDE723C6348900EF81B0 /* SceneDelegate.swift */,
@@ -186,8 +186,8 @@
 				A3F0FE0323C6354300EF81B0 /* Stage+CoreDataProperties.swift in Sources */,
 				A3F0FE0223C6354300EF81B0 /* Stage+CoreDataClass.swift in Sources */,
 				A3F0FE0023C6354300EF81B0 /* Race+CoreDataClass.swift in Sources */,
-				A3F0FE0A23C637AC00EF81B0 /* StageModel.swift in Sources */,
 				A3F0FDE623C6348900EF81B0 /* AppDelegate.swift in Sources */,
+				A3B173E623C641EE00A4C86F /* StageModel.swift in Sources */,
 				A3F0FE0123C6354300EF81B0 /* Race+CoreDataProperties.swift in Sources */,
 				A3F0FDE823C6348900EF81B0 /* SceneDelegate.swift in Sources */,
 				A3F0FDED23C6348900EF81B0 /* ContentView.swift in Sources */,
