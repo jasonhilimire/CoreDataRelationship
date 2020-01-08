@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Race" representedClassName="Race" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="raceName" optional="YES" attributeType="String"/>
+        <relationship name="stages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stage" inverseName="race" inverseEntity="Stage"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="raceName"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Stage" representedClassName="Stage" syncable="YES">
+        <attribute name="stageName" optional="YES" attributeType="String"/>
+        <attribute name="stageNum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="race" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Race" inverseName="stages" inverseEntity="Race"/>
+    </entity>
+    <elements>
+        <element name="Race" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="Stage" positionX="-54" positionY="9" width="128" height="88"/>
+    </elements>
 </model>

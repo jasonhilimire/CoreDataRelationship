@@ -14,6 +14,12 @@
 		A3F0FDEF23C6348C00EF81B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F0FDEE23C6348C00EF81B0 /* Assets.xcassets */; };
 		A3F0FDF223C6348C00EF81B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F0FDF123C6348C00EF81B0 /* Preview Assets.xcassets */; };
 		A3F0FDF523C6348C00EF81B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F0FDF323C6348C00EF81B0 /* LaunchScreen.storyboard */; };
+		A3F0FE0023C6354300EF81B0 /* Race+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFC23C6354300EF81B0 /* Race+CoreDataClass.swift */; };
+		A3F0FE0123C6354300EF81B0 /* Race+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFD23C6354300EF81B0 /* Race+CoreDataProperties.swift */; };
+		A3F0FE0223C6354300EF81B0 /* Stage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFE23C6354300EF81B0 /* Stage+CoreDataClass.swift */; };
+		A3F0FE0323C6354300EF81B0 /* Stage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FDFF23C6354300EF81B0 /* Stage+CoreDataProperties.swift */; };
+		A3F0FE0A23C637AC00EF81B0 /* StageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FE0923C637AB00EF81B0 /* StageModel.swift */; };
+		A3F0FE0E23C63A9700EF81B0 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F0FE0D23C63A9700EF81B0 /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		A3F0FDF123C6348C00EF81B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3F0FDF423C6348C00EF81B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3F0FDF623C6348C00EF81B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F0FDFC23C6354300EF81B0 /* Race+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Race+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A3F0FDFD23C6354300EF81B0 /* Race+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Race+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A3F0FDFE23C6354300EF81B0 /* Stage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stage+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A3F0FDFF23C6354300EF81B0 /* Stage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stage+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A3F0FE0923C637AB00EF81B0 /* StageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StageModel.swift; path = "../../CoreDataRelationship 2/StageModel.swift"; sourceTree = "<group>"; };
+		A3F0FE0D23C63A9700EF81B0 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerView.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/PickerView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +70,11 @@
 		A3F0FDE423C6348900EF81B0 /* CoreDataRelationship */ = {
 			isa = PBXGroup;
 			children = (
+				A3F0FE0923C637AB00EF81B0 /* StageModel.swift */,
+				A3F0FE0423C6354900EF81B0 /* NS Managed SubClasses */,
 				A3F0FDE523C6348900EF81B0 /* AppDelegate.swift */,
 				A3F0FDE723C6348900EF81B0 /* SceneDelegate.swift */,
-				A3F0FDEC23C6348900EF81B0 /* ContentView.swift */,
+				A3F0FE0723C636EB00EF81B0 /* Views */,
 				A3F0FDEE23C6348C00EF81B0 /* Assets.xcassets */,
 				A3F0FDF323C6348C00EF81B0 /* LaunchScreen.storyboard */,
 				A3F0FDF623C6348C00EF81B0 /* Info.plist */,
@@ -76,6 +90,26 @@
 				A3F0FDF123C6348C00EF81B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3F0FE0423C6354900EF81B0 /* NS Managed SubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A3F0FDFD23C6354300EF81B0 /* Race+CoreDataProperties.swift */,
+				A3F0FDFE23C6354300EF81B0 /* Stage+CoreDataClass.swift */,
+				A3F0FDFF23C6354300EF81B0 /* Stage+CoreDataProperties.swift */,
+				A3F0FDFC23C6354300EF81B0 /* Race+CoreDataClass.swift */,
+			);
+			path = "NS Managed SubClasses";
+			sourceTree = "<group>";
+		};
+		A3F0FE0723C636EB00EF81B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3F0FE0D23C63A9700EF81B0 /* PickerView.swift */,
+				A3F0FDEC23C6348900EF81B0 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F0FE0E23C63A9700EF81B0 /* PickerView.swift in Sources */,
+				A3F0FE0323C6354300EF81B0 /* Stage+CoreDataProperties.swift in Sources */,
+				A3F0FE0223C6354300EF81B0 /* Stage+CoreDataClass.swift in Sources */,
+				A3F0FE0023C6354300EF81B0 /* Race+CoreDataClass.swift in Sources */,
+				A3F0FE0A23C637AC00EF81B0 /* StageModel.swift in Sources */,
 				A3F0FDE623C6348900EF81B0 /* AppDelegate.swift in Sources */,
+				A3F0FE0123C6354300EF81B0 /* Race+CoreDataProperties.swift in Sources */,
 				A3F0FDE823C6348900EF81B0 /* SceneDelegate.swift in Sources */,
 				A3F0FDED23C6348900EF81B0 /* ContentView.swift in Sources */,
 				A3F0FDEB23C6348900EF81B0 /* CoreDataRelationship.xcdatamodeld in Sources */,
